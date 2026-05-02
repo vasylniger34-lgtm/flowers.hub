@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flowers Hub | Квіти Східниця та Трускавець</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/style.css">
+  
+  <!-- GSAP & Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Noise Texture Overlay -->
+  <div class="noise-bg"></div>
+
+  <!-- Navbar Glassmorphism -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-flowers">Flowers</span><span class="logo-hub">Hub</span>
+      </a>
+      <div class="nav-links hidden-mobile">
+        <a href="#catalog" class="nav-link">Каталог</a>
+        <a href="#features" class="nav-link">Переваги</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contacts" class="nav-link">Контакти</a>
+      </div>
+      <div class="nav-actions flex align-center gap-4">
+        <a href="tel:+380670110121" class="text-white font-medium hidden-mobile hover-accent flex align-center gap-2">
+          <i data-lucide="phone" class="text-accent" style="width: 18px; height: 18px;"></i> +380 67 011 01 21
+        </a>
+        <a href="https://www.instagram.com/flowers.hub.skhidnytsia/" target="_blank" class="btn btn-primary btn-glow">
+          <i data-lucide="instagram"></i> Замовити
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Premium Hero Section -->
+    <section class="hero">
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+      
+      <div class="container p-relative z-10 w-100">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="badge animate-fade-up">Східниця | Трускавець</div>
+            <h1 class="hero-title animate-fade-up" style="animation-delay: 0.1s;">
+              Авторські букети для<br/><span class="text-accent italic-serif">важливих моментів</span>
+            </h1>
+            <p class="hero-desc animate-fade-up" style="animation-delay: 0.2s;">
+              Стильні композиції, декор номерів та повітряні кульки. Ми створюємо преміальні емоції з доставкою по Східниці та Трускавцю.
+            </p>
+            <div class="hero-buttons animate-fade-up" style="animation-delay: 0.3s;">
+              <a href="#catalog" class="btn btn-primary btn-large btn-glow">Відкрити каталог</a>
+              <a href="tel:+380670110121" class="btn btn-glass btn-large"><i data-lucide="phone"></i> Зателефонувати</a>
+            </div>
+          </div>
+          
+          <div class="hero-collage animate-fade-up" style="animation-delay: 0.4s;">
+            <img src="/images/3760644598105145543_3760644584641461854.jpg" class="hero-img-main" alt="Premium Bouquet">
+            <img src="/images/3760825220933152299_3760825212234157655.jpg" class="hero-img-float top-left" alt="Roses">
+            <img src="/images/3761235354943550944_3761235347754515795.jpg" class="hero-img-float bottom-right" alt="Decor">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bento Grid Features (21st.dev Style) -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Наші <span class="logo" style="font-size: 2.5rem;"><span class="logo-flowers">Flowers</span><span class="logo-hub">Hub</span></span> Послуги</h2>
+          <p class="section-desc text-gray">Комплексний підхід до святкування: від стильного букета до повного декору готельного номера.</p>
+        </div>
+        
+        <div class="bento-grid">
+          <div class="bento-item bento-large glass-card p-relative overflow-hidden">
+            <div class="bento-glow"></div>
+            <i data-lucide="gem" class="bento-icon text-accent mb-4"></i>
+            <h3>Авторські букети</h3>
+            <p class="text-gray">Стильні композиції зі свіжих квітів для будь-якого приводу. Кожен букет збирається індивідуально нашими флористами.</p>
+            <img src="/images/3764228207969853261_3764228198062940455.jpg" class="bento-bg-img" alt="Premium">
+          </div>
+          
+          <div class="bento-item glass-card">
+            <i data-lucide="bed-double" class="bento-icon text-accent mb-4"></i>
+            <h3>Декор номерів</h3>
+            <p class="text-gray">Романтичне оформлення номерів у готелях Східниці та Трускавця. Створюємо магію для ваших коханих.</p>
+          </div>
+          
+          <div class="bento-item glass-card">
+            <i data-lucide="party-popper" class="bento-icon text-accent mb-4"></i>
+            <h3>Повітряні кульки</h3>
+            <p class="text-gray">Доповніть букет яскравими гелієвими кульками. Ідеально для днів народжень та свят.</p>
+          </div>
+          
+          <div class="bento-item bento-wide glass-card flex-row align-center p-0">
+            <div class="flex-1 p-lg">
+              <i data-lucide="map-pin" class="bento-icon text-accent mb-4"></i>
+              <h3>Доставка Східниця & Трускавець</h3>
+              <p class="text-gray">Швидка та бережна доставка прямо в руки. Приймаємо замовлення за телефоном або в Direct.</p>
+              <a href="tel:+380670110121" class="btn btn-outline mt-4">Зателефонувати</a>
+            </div>
+            <div class="flex-1 h-100 bento-img-wrapper">
+               <img src="/images/3760644598105145543_3760644584624619687.jpg" class="rounded-r-lg w-100 h-100 object-cover" alt="Delivery">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Massive Catalog Section -->
+    <section id="catalog" class="section bg-darker">
+      <div class="container">
+        <div class="section-header flex-between align-end">
+          <div>
+            <h2 class="section-title">Каталог композицій</h2>
+            <p class="section-desc text-gray">Обирайте готовий варіант або надішліть нам свій референс.</p>
+          </div>
+          <a href="https://www.instagram.com/flowers.hub.skhidnytsia/" target="_blank" class="btn btn-glass hidden-mobile">
+            Весь каталог в Instagram <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+        
+        <div class="catalog-grid">
+          <!-- Item 1 -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrapper">
+              <img src="/images/3760644598105145543_3760644584641461854.jpg" alt="Авторський мікс" loading="lazy">
+              <div class="product-badge">Хіт продажу</div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Авторський мікс</h3>
+              <p class="product-desc text-gray">Ексклюзивний букет зі свіжих квітів, підібраний флористом.</p>
+              <div class="product-footer">
+                <a href="https://www.instagram.com/direct/t/17845347206497163" target="_blank" class="btn btn-primary w-100">
+                  <i data-lucide="instagram"></i> Замовити в Direct
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrapper">
+              <img src="/images/3760825220933152299_3760825212234157655.jpg" alt="Півонієвидні троянди" loading="lazy">
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Ніжна композиція</h3>
+              <p class="product-desc text-gray">Елегантний монобукет у стильному пакуванні.</p>
+              <div class="product-footer">
+                <a href="https://www.instagram.com/direct/t/17845347206497163" target="_blank" class="btn btn-primary w-100">
+                  <i data-lucide="instagram"></i> Замовити в Direct
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrapper">
+              <img src="/images/3761235354943550944_3761235347754515795.jpg" alt="Весільний декор" loading="lazy">
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Декор номерів</h3>
+              <p class="product-desc text-gray">Створення романтичної атмосфери свічками та пелюстками.</p>
+              <div class="product-footer">
+                <a href="https://www.instagram.com/direct/t/17845347206497163" target="_blank" class="btn btn-primary w-100">
+                  <i data-lucide="instagram"></i> Обговорити деталі
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrapper">
+              <img src="/images/3797518550508790471.jpg" alt="Flower Box" loading="lazy">
+              <div class="product-badge">Преміум</div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Flower Box</h3>
+              <p class="product-desc text-gray">Квіти у стильній капелюшній коробці. Вау-ефект гарантовано.</p>
+              <div class="product-footer">
+                <a href="https://www.instagram.com/direct/t/17845347206497163" target="_blank" class="btn btn-primary w-100">
+                  <i data-lucide="instagram"></i> Замовити в Direct
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrapper">
+              <img src="/images/3772158700447110087_3772158688929532950.jpg" alt="Троянди" loading="lazy">
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Червона класика</h3>
+              <p class="product-desc text-gray">Розкішні троянди будь-якої кількості (від 15 до 101+).</p>
+              <div class="product-footer">
+                <a href="https://www.instagram.com/direct/t/17845347206497163" target="_blank" class="btn btn-primary w-100">
+                  <i data-lucide="instagram"></i> Замовити в Direct
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrapper">
+              <img src="/images/3803892086940943801_3803892070490885715.jpg" alt="Подарунковий набір" loading="lazy">
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Подарункові набори</h3>
+              <p class="product-desc text-gray">Квіти разом із макарунами або іншими солодощами.</p>
+              <div class="product-footer">
+                <a href="https://www.instagram.com/direct/t/17845347206497163" target="_blank" class="btn btn-primary w-100">
+                  <i data-lucide="instagram"></i> Замовити в Direct
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How To Buy Section -->
+    <section id="how-to" class="section">
+      <div class="container">
+        <div class="glass-panel p-lg">
+          <div class="section-header text-center mb-lg">
+            <h2 class="section-title">Як зробити замовлення</h2>
+            <p class="section-desc text-gray">Максимально швидкий та зручний процес покупки.</p>
+          </div>
+          
+          <div class="steps-flow">
+            <div class="step-circle-card">
+              <div class="step-num-glow">1</div>
+              <h3>Обери послугу</h3>
+              <p class="text-gray text-sm">Букет, кульки або декор з нашого каталогу чи Instagram.</p>
+            </div>
+            <div class="step-arrow"><i data-lucide="arrow-right"></i></div>
+            <div class="step-circle-card">
+              <div class="step-num-glow">2</div>
+              <h3>Напиши або подзвони</h3>
+              <p class="text-gray text-sm">Зв'яжись з нами в Direct або за телефоном <br/>+380 67 011 01 21.</p>
+            </div>
+            <div class="step-arrow"><i data-lucide="arrow-right"></i></div>
+            <div class="step-circle-card">
+              <div class="step-num-glow">3</div>
+              <h3>Отримай красу</h3>
+              <p class="text-gray text-sm">Ми доставимо сюрприз по Східниці або Трускавцю.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section bg-darker">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">FAQ / Графік роботи</h2>
+        </div>
+        
+        <div class="faq-container">
+          <div class="faq-item glass-card">
+            <div class="faq-question">
+              <h3>Який у вас графік роботи?</h3>
+            </div>
+            <div class="faq-answer d-block">
+              <p class="text-gray">Ми працюємо за зручним графіком:<br/>
+                <strong class="text-white">Пн–Сб:</strong> 09:00–19:00<br/>
+                <strong class="text-white">Нд:</strong> 10:00–17:00
+              </p>
+            </div>
+          </div>
+          <div class="faq-item glass-card">
+            <div class="faq-question">
+              <h3>Де ви знаходитесь та куди доставляєте?</h3>
+            </div>
+            <div class="faq-answer d-block">
+              <p class="text-gray">Ми знаходимось у Східниці. Основна доставка здійснюється по Східниці та Трускавцю прямо до дверей або в готельний номер.</p>
+            </div>
+          </div>
+          <div class="faq-item glass-card">
+            <div class="faq-question">
+              <h3>Які послуги ви надаєте крім букетів?</h3>
+            </div>
+            <div class="faq-answer d-block">
+              <p class="text-gray">Окрім авторських букетів та flower-боксів, ми займаємось професійним оформленням та декором номерів, а також доставляємо гелієві повітряні кульки.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-massive glass-card text-center p-xl p-relative overflow-hidden">
+          <div class="cta-glow-bg"></div>
+          <h2 class="hero-title p-relative z-10" style="font-size: 3.5rem;">Готові здивувати?</h2>
+          <p class="text-gray mb-lg p-relative z-10" style="font-size: 1.25rem;">Напишіть нам або зателефонуйте прямо зараз.</p>
+          <div class="flex-center gap-4 p-relative z-10 wrap-mobile">
+            <a href="https://www.instagram.com/flowers.hub.skhidnytsia/" target="_blank" class="btn btn-primary btn-large btn-glow" style="font-size: 1.25rem;">
+              <i data-lucide="instagram"></i> Direct Instagram
+            </a>
+            <a href="tel:+380670110121" class="btn btn-glass btn-large" style="font-size: 1.25rem;">
+              <i data-lucide="phone"></i> +380 67 011 01 21
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contacts" class="footer border-t border-dark">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <a href="#" class="logo mb-4">
+            <span class="logo-flowers">Flowers</span><span class="logo-hub">Hub</span>
+          </a>
+          <p class="text-gray mt-4 max-w-sm">АВТОРСЬКІ БУКЕТИ ДЛЯ ВАЖЛИВИХ МОМЕНТІВ. Стильні композиції, декор номерів та кульки у Східниці та Трускавці.</p>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4 class="text-white text-lg mb-4 font-bold">Контакти</h4>
+          <ul class="clean-list text-gray">
+            <li class="flex align-center gap-3 mb-3">
+              <div class="icon-circle"><i data-lucide="map-pin" class="text-accent"></i></div>
+              Східниця | Трускавець
+            </li>
+            <li class="flex align-center gap-3 mb-3">
+              <div class="icon-circle"><i data-lucide="phone" class="text-accent"></i></div>
+              <a href="tel:+380670110121" class="hover-accent text-white font-medium">+380 67 011 01 21</a>
+            </li>
+            <li class="flex align-center gap-3 mb-3">
+              <div class="icon-circle"><i data-lucide="clock" class="text-accent"></i></div>
+              <div>Пн–Сб 09:00–19:00<br/>Нд 10:00–17:00</div>
+            </li>
+            <li class="flex align-center gap-3 mb-3 mt-4">
+              <a href="https://www.instagram.com/flowers.hub.skhidnytsia/" target="_blank" class="btn btn-outline btn-sm w-100 justify-center">
+                <i data-lucide="instagram"></i> Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom flex-between align-center border-t border-dark pt-4 mt-lg text-gray font-sm wrap-mobile gap-4">
+        <p>&copy; 2026 Flowers Hub. Всі права захищені.</p>
+        <p>Розроблено з командою <a href="https://wirecode.space/" id="wire-code-link" target="_blank" class="text-white hover-accent font-bold">wire code</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
